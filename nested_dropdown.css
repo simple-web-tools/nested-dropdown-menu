@@ -1,0 +1,59 @@
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #333; /* Dark background */
+    min-width: 160px;
+    z-index: 1;
+    padding: 0;
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Styling for dropdown links */
+.dropdown-content a {
+    color: white; /* Light text for dark background */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+    background-color: #444; /* Slightly lighter on hover */
+}
+
+/* Submenu structure with arrows for submenu triggers */
+.dropdown-submenu {
+    position: relative;
+    /* padding-right: 16px; /* Space for the arrow */ */
+}
+
+.dropdown-submenu > .submenu-trigger::after {
+    content: "▶"; /* Arrow indicating a submenu */
+    float: right;
+}
+
+/* Submenu content, positioned to the right */
+.dropdown-submenu-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    left: 100%; /* Aligns the submenu to the right of the parent */
+    top: 0;
+    background-color: #333; /* Dark background */
+    z-index: 1;
+    min-width: 160px;
+}
+
+/* Show only the immediate submenu on hover */
+.dropdown-submenu:hover > .dropdown-submenu-content {
+    display: block;
+}

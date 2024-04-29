@@ -1,0 +1,36 @@
+/* Navbar styling */
+.navbar {
+    background-color: #333; /* Dark background */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Flex container for navbar links and dropdown */
+.navbar-content {
+    display: flex;
+    gap: 20px; /* Spacing between elements */
+    align-items: center;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Styling for button-like elements (menu button, About link, etc.) */
+.button-like {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    border: 1px solid #555; /* Dark gray border */
+    padding: 8px 16px; /* Padding for comfort */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: none; /* No underline */
+    transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+/* Hover effect for button-like elements */
+.button-like:hover {
+    background-color: #444; /* Slightly lighter on hover */
+}
