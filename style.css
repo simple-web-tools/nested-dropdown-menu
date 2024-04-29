@@ -1,0 +1,74 @@
+/* Basic styling for the dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content hidden by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Dark background */
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Styling for dropdown links, with light text for a dark theme */
+.dropdown-content a {
+    color: white; /* Light text for visibility */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover effect for links */
+.dropdown-content a:hover {
+    background-color: #444; /* Slightly lighter on hover */
+}
+
+/* Submenu structure with arrow for triggers */
+.dropdown-submenu {
+    position: relative;
+    /* padding-right: 16px; /* Space for the arrow */ */
+}
+
+/* Arrow for submenu triggers only */
+.dropdown-submenu > .submenu-trigger::after {
+    content: "▶"; /* Arrow pointing to a submenu */
+    float: right;
+}
+
+/* Submenu content, initially hidden */
+.dropdown-submenu-content {
+    display: none;
+    position: absolute;
+    left: 100%; /* Aligns the submenu to the right of the parent */
+    top: 0;
+    background-color: #333; /* Dark background */
+    z-index: 1;
+    min-width: 160px;
+}
+
+/* Show only the immediate submenu on hover */
+.dropdown-submenu:hover > .dropdown-submenu-content {
+    display: block;
+}
+
+/* Optional styles for the button */
+.menu-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Styling for overall hover effect */
+.dropdown-content a:hover {
+    background-color: #444; /* Slightly lighter for hover effect */
+}
